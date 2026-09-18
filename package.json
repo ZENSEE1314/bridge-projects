@@ -1,0 +1,7 @@
+{
+  "name": "bridge-projects",
+  "version": "1.0.0",
+  "description": "BridgeX AI Services website",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}
