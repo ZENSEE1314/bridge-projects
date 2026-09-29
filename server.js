@@ -1,6 +1,6 @@
 const http = require('http'), fs = require('fs'), path = require('path');
 const port = process.env.PORT || 3000;
-const types = {'.html':'text/html','.css':'text/css','.js':'text/javascript','.png':'image/png','.svg':'image/svg+xml','.ico':'image/x-icon'};
+const types = {'.html':'text/html','.css':'text/css','.js':'text/javascript','.png':'image/png','.jpg':'image/jpeg','.svg':'image/svg+xml','.ico':'image/x-icon'};
 http.createServer((req, res) => {
   let f = (req.url === '/' ? '/index.html' : req.url).split('?')[0];
   const fp = path.join(__dirname, path.normalize(f));
